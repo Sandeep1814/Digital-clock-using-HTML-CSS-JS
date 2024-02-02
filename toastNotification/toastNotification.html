@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head><title>toastNotification</title>
+  <link rel="stylesheet" href="toastNotification.css">
+  </head>
+  <body>
+    <div class="buttons">
+      <button onclick="showToast()">Success</button>
+      <button onclick="showToast()">Error</button>
+      <button onclick="showToast()">Invalid</button>
+    
+    </div>
+
+    <div class="toastBox"></div>
+
+
+    <script>
+      let toastBox = document.getElementById('toastBox');
+      let successMsg = 'Successfully submitted'
+
+      function showToast(){
+        let toast = document.createElement('div');
+        toast.classList.add('toast');
+        toast.innerHTML='Success';
+        toastBox.appendChild(toast);
+      }
+
+    </script>
+  </body>
+</html>
